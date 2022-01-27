@@ -85,8 +85,8 @@ class GDRCDRouter
         foreach ($files as $key => $value) {
             $path = realpath($dir . DIRECTORY_SEPARATOR . $value);
             if(is_dir($path) && ($value != ".") && ($value != "..")) {
-                $this->dirList($path, $results);
                 $results[] = $path;
+                $this->dirList($path, $results);
             }
         }
 
@@ -107,5 +107,22 @@ class GDRCDRouter
         }
 
         $router->run();
+    }
+
+    function listFolders($dir)
+    {
+        $dh = scandir($dir);
+        $return = array();
+
+        foreach ($dh as $folder) {
+            if ($folder != '.' && $folder != '..') {
+                if (is_dir($dir . '/' . $folder)) {
+                    $return[] = array($folder => $this->listFolders($dir . '/' . $folder));
+                } else {
+                    $return[] = $folder;
+                }
+            }
+        }
+        return $return;
     }
 }

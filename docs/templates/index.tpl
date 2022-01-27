@@ -22,7 +22,7 @@
                         </div>
                     </div>
 
-                    {include file="{{$file_name}}.tpl"}
+                    {include file="structure/{{$file_name}}.tpl"}
                 </div>
             </div>
             <div class="footer row">
