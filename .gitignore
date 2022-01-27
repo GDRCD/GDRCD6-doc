@@ -4,3 +4,4 @@
 /composer.lock
 /package-lock.json
 /.idea
+/core/db_overrides.php
