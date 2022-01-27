@@ -1,0 +1,27 @@
+{
+  "name": "gdrcd6-doc",
+  "version": "1.0.0",
+  "description": "GDRCD v6 Documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDRCD/GDRCD6-doc.git"
+  },
+  "keywords": [
+    "doc",
+    "gdrcd",
+    "gdrcd6"
+  ],
+  "author": "gianni10049",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GDRCD/GDRCD6-doc/issues"
+  },
+  "homepage": "https://github.com/GDRCD/GDRCD6-doc#readme",
+  "dependencies": {
+    "yarn": "^1.22.17"
+  }
+}
