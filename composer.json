@@ -3,6 +3,7 @@
     "monolog/monolog": "2.0.*",
     "erusev/parsedown": "^1.7",
     "bramus/router": "^1.6",
-    "ext-mysqli": "*"
+    "ext-mysqli": "*",
+    "smarty/smarty": "^4.0"
   }
 }

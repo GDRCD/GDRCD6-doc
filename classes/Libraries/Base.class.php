@@ -17,14 +17,6 @@ abstract class BaseClass
         $me_id,
         $permission;
 
-    protected function __construct()
-    {
-        global $PARAMETERS;
-        $this->me = Filters::out($_SESSION['login']);
-        $this->me_id = Filters::int($_SESSION['login_id']);
-        $this->permission = Filters::int($_SESSION['permessi']);
-    }
-
     /**
      * @fn getInstance
      * @note Self Instance for static recall (BaseClass::__construct();)

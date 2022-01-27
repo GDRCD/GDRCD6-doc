@@ -99,21 +99,13 @@ class GDRCDRouter
 
         $paths = DB::query("SELECT * FROM paths WHERE 1",'result');
 
-
         foreach ($paths as $path){
             $root = Filters::out($path['path']);
             $type = Filters::out($path['type']);
             $function = Filters::out($path['function']);
-
             $router->{$type}($root,$function);
         }
 
         $router->run();
-    }
-
-    public function switchFunctions($id){
-
-        var_dump($id);
-
     }
 }
