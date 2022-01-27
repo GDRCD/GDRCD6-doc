@@ -5,3 +5,4 @@
 /package-lock.json
 /.idea
 /core/db_overrides.php
+/docs/compiled

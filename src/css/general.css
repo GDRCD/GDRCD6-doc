@@ -1,0 +1,78 @@
+
+
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #F8F9FF !important;
+}
+
+.central_body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.central_body .content_box{
+    height: 100vh;
+}
+
+
+
+.central_body .content_box .header{
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #EAEAF3;
+    position: relative;
+}
+
+.central_body .content{
+    position: relative;
+}
+
+/*** MENU ***/
+
+
+.central_body .menu_box{
+    height: 100vh;
+    background: #081A51;
+    position: relative;
+}
+
+.central_body  .menu_commands{
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.central_body  .menu_commands .close-menu{
+    width: 20px;
+    height: 20px;
+    color: black;
+    cursor: pointer;
+    background: lightgray;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.central_body .menu_commands .open-menu{
+    width: 20px;
+    height: 20px;
+    color: black;
+    cursor: pointer;
+    background: lightgray;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
